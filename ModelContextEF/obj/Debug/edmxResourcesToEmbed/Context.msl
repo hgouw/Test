@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CodeFirstDatabase" CdmEntityContainer="Context">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="ModelContextEF.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndustryGroups">
+      <EntityTypeMapping TypeName="ModelContextEF.IndustryGroup">
+        <MappingFragment StoreEntitySet="IndustryGroup">
+          <ScalarProperty Name="Group" ColumnName="Group" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EndOfDays">
+      <EntityTypeMapping TypeName="ModelContextEF.EndOfDay">
+        <MappingFragment StoreEntitySet="EndOfDay">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Open" ColumnName="Open" />
+          <ScalarProperty Name="High" ColumnName="High" />
+          <ScalarProperty Name="Low" ColumnName="Low" />
+          <ScalarProperty Name="Last" ColumnName="Last" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

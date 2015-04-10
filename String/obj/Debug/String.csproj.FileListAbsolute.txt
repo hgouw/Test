@@ -1,0 +1,6 @@
+C:\My Documents\My Projects\Test\String\bin\Debug\String.exe.config
+C:\My Documents\My Projects\Test\String\bin\Debug\String.exe
+C:\My Documents\My Projects\Test\String\bin\Debug\String.pdb
+C:\My Documents\My Projects\Test\String\obj\Debug\String.csprojResolveAssemblyReference.cache
+C:\My Documents\My Projects\Test\String\obj\Debug\String.exe
+C:\My Documents\My Projects\Test\String\obj\Debug\String.pdb

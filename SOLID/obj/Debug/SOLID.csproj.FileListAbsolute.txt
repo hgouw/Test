@@ -1,0 +1,6 @@
+C:\My Documents\My Projects\Test\SOLID\bin\Debug\SOLID.exe.config
+C:\My Documents\My Projects\Test\SOLID\bin\Debug\SOLID.exe
+C:\My Documents\My Projects\Test\SOLID\bin\Debug\SOLID.pdb
+C:\My Documents\My Projects\Test\SOLID\obj\Debug\SOLID.csprojResolveAssemblyReference.cache
+C:\My Documents\My Projects\Test\SOLID\obj\Debug\SOLID.exe
+C:\My Documents\My Projects\Test\SOLID\obj\Debug\SOLID.pdb

@@ -1,0 +1,13 @@
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\CodeFirstEF.exe.config
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\CodeFirstEF.exe
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\CodeFirstEF.pdb
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\EntityFramework.dll
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\EntityFramework.xml
+C:\My Documents\My Projects\Test\CodeFirstEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.csprojResolveAssemblyReference.cache
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.Migrations.InitialCreate.resources
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.Migrations.AddAge.resources
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.csproj.GenerateResource.Cache
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.exe
+C:\My Documents\My Projects\Test\CodeFirstEF\obj\Debug\CodeFirstEF.pdb

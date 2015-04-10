@@ -1,0 +1,6 @@
+C:\My Documents\My Projects\Test\Inheritances\bin\Debug\Inheritances.exe.config
+C:\My Documents\My Projects\Test\Inheritances\bin\Debug\Inheritances.exe
+C:\My Documents\My Projects\Test\Inheritances\bin\Debug\Inheritances.pdb
+C:\My Documents\My Projects\Test\Inheritances\obj\Debug\Inheritances.csprojResolveAssemblyReference.cache
+C:\My Documents\My Projects\Test\Inheritances\obj\Debug\Inheritances.exe
+C:\My Documents\My Projects\Test\Inheritances\obj\Debug\Inheritances.pdb

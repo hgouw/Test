@@ -1,0 +1,5 @@
+C:\My Documents\My Projects\Test\DateTime\bin\Debug\DateTime.exe.config
+C:\My Documents\My Projects\Test\DateTime\bin\Debug\DateTime.exe
+C:\My Documents\My Projects\Test\DateTime\bin\Debug\DateTime.pdb
+C:\My Documents\My Projects\Test\DateTime\obj\Debug\DateTime.exe
+C:\My Documents\My Projects\Test\DateTime\obj\Debug\DateTime.pdb
