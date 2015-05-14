@@ -6,13 +6,19 @@ namespace Identity
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetUserName());
+            Console.WriteLine("GetCurrentName = " + GetCurrentName());
+            Console.WriteLine("GetUserName = " + GetUserDomainNameGetUserName());
             Console.ReadLine();
         }
 
-        static string GetUserName()
+        static string GetCurrentName()
         {
-            return String.Format("{0}\\{1}", Environment.UserDomainName, Environment.UserName); ;
+            return System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+        }
+
+        static string GetUserDomainNameGetUserName()
+        {
+            return String.Format("{0}\\{1}", Environment.UserDomainName, Environment.UserName);
         }
     }
 }
