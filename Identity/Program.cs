@@ -7,7 +7,7 @@ namespace Identity
         static void Main(string[] args)
         {
             Console.WriteLine("GetCurrentName = " + GetCurrentName());
-            Console.WriteLine("GetUserName = " + GetUserDomainNameGetUserName());
+            Console.WriteLine("GetUserDomainName = " + GetUserDomainNameGetUserName());
             Console.ReadLine();
         }
 
