@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritances
+namespace Inheritance
 {
     class Program
     {
@@ -21,6 +21,9 @@ namespace Inheritances
             a.ABC();
             b.ABC();
             c.ABC();
+            Console.ReadLine();
+
+            new Z();
             Console.ReadLine();
         }
     }

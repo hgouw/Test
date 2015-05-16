@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inheritances
+namespace Inheritance
 {
     public class A
     {
