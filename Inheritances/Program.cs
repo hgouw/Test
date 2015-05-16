@@ -14,6 +14,14 @@ namespace Inheritances
             base1.Display();
             Console.WriteLine("Flag = {0}", base1.Flag);
             Console.ReadLine();
+
+            A a = new C();
+            B b = new C();
+            C c = new C();
+            a.ABC();
+            b.ABC();
+            c.ABC();
+            Console.ReadLine();
         }
     }
 }
