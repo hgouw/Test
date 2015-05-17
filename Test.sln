@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operator", "Operator\Operator.csproj", "{AAFF0288-E2FB-4133-8998-22003D977B0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{F712FDAE-2D24-4E5F-947A-70153DB94DBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AAFF0288-E2FB-4133-8998-22003D977B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAFF0288-E2FB-4133-8998-22003D977B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAFF0288-E2FB-4133-8998-22003D977B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F712FDAE-2D24-4E5F-947A-70153DB94DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F712FDAE-2D24-4E5F-947A-70153DB94DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F712FDAE-2D24-4E5F-947A-70153DB94DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F712FDAE-2D24-4E5F-947A-70153DB94DBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
