@@ -18,7 +18,7 @@ namespace Inheritance
     }
     public class C : B
     {
-        new public virtual void ABC()
+        public new void ABC()
         {
             Console.WriteLine("C");
         }

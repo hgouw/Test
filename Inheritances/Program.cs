@@ -10,9 +10,9 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            var base1 = new Base1(true);
-            base1.Display();
-            Console.WriteLine("Flag = {0}", base1.Flag);
+            var base3 = new Base3(true);
+            base3.Display();
+            Console.WriteLine("Flag = {0}", base3.Flag);
             Console.ReadLine();
 
             A a = new C();
