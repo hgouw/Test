@@ -24,14 +24,14 @@ namespace Casting
             House mansion;
             try
             {
-                mansion = (House)asset;
+                mansion = (House)asset; // Explicitly downcast to a subclass reference
             }
             catch (Exception ex)
             {
                 Console.WriteLine("mansion = (House)asset -> ({0}", ex.Message);
             }
 
-            mansion = asset as House;
+            mansion = asset as House; // If downcast fails resulting in a null instead of throwing an exception
             Console.WriteLine("mansion = asset as House -> ({0})", mansion == null ? "null" : "NOT null");
 
             Console.ReadLine();
