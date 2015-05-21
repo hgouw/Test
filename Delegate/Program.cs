@@ -10,20 +10,20 @@ namespace Delegate
     {
         public delegate void WriteDelegate(string msg);
 
+        public class Log
+        {
+            public void Write(string msg)
+            {
+                Console.WriteLine(msg);
+            }
+        }
+
         static void Main(string[] args)
         {
             Log log = new Log();
             WriteDelegate writeDelegate = new WriteDelegate(log.Write);
             writeDelegate("Hello World!");
             Console.ReadLine();
-        }
-    }
-
-    public class Log
-    {
-        public void Write(string msg)
-        {
-            Console.WriteLine(msg);
         }
     }
 }
