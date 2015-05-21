@@ -4,6 +4,19 @@ namespace Casting
 {
     class Program
     {
+        public class Asset
+        {
+            public string Name { get; set; }
+        }
+        public class House : Asset
+        {
+            public decimal Price { get; set; }
+        }
+        public class Stock : Asset
+        {
+            public long SharesOwned { get; set; }
+        }
+
         static void Main(string[] args)
         {
             House house = new House { Name = "37 Robert Road, Cherrybrook", Price = 1000000 };
