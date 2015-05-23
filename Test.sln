@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort", "Sort\Sort.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscribe", "Subscribe\Subscribe.csproj", "{A030749F-C2E8-489F-A98B-3E54231A5A5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "Exception\Exception.csproj", "{9994AEA7-A4AE-494B-8633-FB40B493DD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{4BFC21FD-8111-484C-841B-6F15C5558D4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{A030749F-C2E8-489F-A98B-3E54231A5A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A030749F-C2E8-489F-A98B-3E54231A5A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A030749F-C2E8-489F-A98B-3E54231A5A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9994AEA7-A4AE-494B-8633-FB40B493DD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9994AEA7-A4AE-494B-8633-FB40B493DD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9994AEA7-A4AE-494B-8633-FB40B493DD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9994AEA7-A4AE-494B-8633-FB40B493DD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFC21FD-8111-484C-841B-6F15C5558D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFC21FD-8111-484C-841B-6F15C5558D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFC21FD-8111-484C-841B-6F15C5558D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFC21FD-8111-484C-841B-6F15C5558D4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
