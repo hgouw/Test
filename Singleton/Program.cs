@@ -1,4 +1,6 @@
-﻿namespace Singleton
+﻿using System;
+
+namespace Singleton
 {
     class Program
     {
@@ -36,6 +38,34 @@
         {
             get
             {
+                return instance;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Multithreaded Singleton
+    /// </summary>
+    public sealed class Singleton3
+    {
+        private static volatile Singleton3 instance;
+        private static object syncRoot = new Object();
+
+        private Singleton3() { }
+
+        public static Singleton3 Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    lock (syncRoot)
+                    {
+                        if (instance == null)
+                            instance = new Singleton3();
+                    }
+                }
+
                 return instance;
             }
         }
