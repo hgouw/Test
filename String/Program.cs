@@ -10,6 +10,13 @@ namespace String
     {
         static void Main(string[] args)
         {
+            // How to tokenize a string
+            string accounts = "Cheque,EveryDay,HighInterest,Saving";
+            string[] accountsArray = accounts.Split(',');
+            foreach (var account in accountsArray)
+                Console.WriteLine(account);
+            Console.ReadLine();
+
             var str = "Line 1" + Environment.NewLine + "Line 2";
             Console.WriteLine(str);
             Console.ReadLine();

@@ -31,10 +31,12 @@ namespace Enumeration
 
         static void Main(string[] args)
         {
+            // How to display each member of an enum
             foreach (var value in Enum.GetValues(typeof(Account)))
                 Console.WriteLine("{0} - {1}", (Account)value, (int)value);
             Console.ReadLine();
 
+            // How to convert a string to its enum value
             string chequeAccount = "Cheque";
             Account chequeAccountEnum = (Account)Enum.Parse(typeof(Account), chequeAccount);
             Console.WriteLine(chequeAccountEnum.ToString());
