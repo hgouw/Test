@@ -2,13 +2,6 @@
 
 namespace Singleton
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-
     public class Singleton1
     {
         private static Singleton1 instance;
@@ -68,6 +61,13 @@ namespace Singleton
 
                 return instance;
             }
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
         }
     }
 }
