@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{F4CCD46A-6F7F-4C96-ADE5-93206470A38C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{C913BAC8-EB48-44B6-86C3-5452ACD3C8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{F4CCD46A-6F7F-4C96-ADE5-93206470A38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4CCD46A-6F7F-4C96-ADE5-93206470A38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4CCD46A-6F7F-4C96-ADE5-93206470A38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C913BAC8-EB48-44B6-86C3-5452ACD3C8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C913BAC8-EB48-44B6-86C3-5452ACD3C8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C913BAC8-EB48-44B6-86C3-5452ACD3C8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C913BAC8-EB48-44B6-86C3-5452ACD3C8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
