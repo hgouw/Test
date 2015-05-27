@@ -15,6 +15,7 @@ namespace Sort
             Future future = new Future();
             Option option = new Option();
 
+            //TODO - sort a list of classes
             instruments.Add(stock);
             instruments.Add(future);
             instruments.Add(option);
