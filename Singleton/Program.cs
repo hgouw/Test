@@ -52,6 +52,7 @@ namespace Singleton
             {
                 if (instance == null)
                 {
+                    // DO NOT USE lock (this), lock (typeof (MyType)), lock ("myLock")
                     lock (syncRoot)
                     {
                         if (instance == null)
