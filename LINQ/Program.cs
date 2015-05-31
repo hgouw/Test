@@ -1,8 +1,37 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LINQ
 {
+    public static class LINQExtension
+    {
+        public static double Median(this IEnumerable<double> source)
+        {
+            if (source.Count() == 0)
+            {
+                throw new InvalidOperationException("Cannot compute median for an empty set.");
+            }
+
+            var sortedList = from number in source
+                             orderby number
+                             select number;
+
+            int itemIndex = (int)sortedList.Count() / 2;
+
+            if (sortedList.Count() % 2 == 0)
+            {
+                // Even number of items. 
+                return (sortedList.ElementAt(itemIndex) + sortedList.ElementAt(itemIndex - 1)) / 2;
+            }
+            else
+            {
+                // Odd number of items. 
+                return sortedList.ElementAt(itemIndex);
+            }
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -15,6 +44,25 @@ namespace LINQ
                 Console.Write("{0} ", i);
             }
             Console.WriteLine();
+            Console.WriteLine();
+
+            string[] colours = { "green", "brown", "blue", "red" };
+            var query1 = from c in colours
+                         where c.Length == colours.Max(x => x.Length)
+                         select c;
+            foreach (var element in query1)
+                Console.WriteLine(element);
+            Console.WriteLine();
+
+            var query2 = colours.Where(x => x.Length == x.Max()); // TODO - using max
+            foreach (var element in query2)
+                Console.WriteLine(element);
+            Console.WriteLine();
+
+            double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };
+            var median = numbers1.Median();
+            Console.WriteLine("Median = " + median);
+
             Console.ReadLine();
         }
     }
