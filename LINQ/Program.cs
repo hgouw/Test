@@ -62,6 +62,12 @@ namespace LINQ
             double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };
             var median = numbers1.Median();
             Console.WriteLine("Median = " + median);
+            Console.WriteLine();
+
+            var names = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
+            var n = names.OrderBy(x => x.Length); // sorted by length from min to max
+            foreach (string name in n)
+                Console.WriteLine(name);
 
             Console.ReadLine();
         }
