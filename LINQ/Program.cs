@@ -64,9 +64,9 @@ namespace LINQ
             Console.WriteLine("Median = " + median);
             Console.WriteLine();
 
-            var names = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
-            var n = names.OrderBy(x => x.Length); // sorted by length from min to max
-            foreach (string name in n)
+            var family = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
+            var names = family.OrderBy(x => x.Length); // sorted by length from min to max
+            foreach (string name in names)
                 Console.WriteLine(name);
 
             Console.ReadLine();

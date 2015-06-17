@@ -8,6 +8,11 @@ namespace Sort
 {
     class Program
     {
+        public class Instrument { };
+        public class Stock : Instrument { };
+        public class Future : Instrument { };
+        public class Option : Instrument { };
+
         static void Main(string[] args)
         {
             List<Instrument> instruments = new List<Instrument> { };
@@ -24,10 +29,5 @@ namespace Sort
                 Console.WriteLine(instrument.ToString());
             Console.ReadLine();
         }
-
-        public class Instrument { };
-        public class Stock : Instrument { };
-        public class Future : Instrument { };
-        public class Option : Instrument { };
     }
 }
