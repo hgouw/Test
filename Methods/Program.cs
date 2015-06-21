@@ -17,6 +17,15 @@ namespace Method
             Console.WriteLine(num);
         }
 
+        /*
+        static void MyFunction(int a, ref int b, out int c)
+        {
+            a = a * 2;
+            b = b * 2;
+            c = c * 2;
+        }
+        */
+
         static void Main(string[] args)
         {
             Display(1);

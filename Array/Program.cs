@@ -12,6 +12,15 @@ namespace Array
             Console.WriteLine(a[0].GetUpperBound(0)); // index of last element of a[0] is 3
             Console.WriteLine(a[1].GetUpperBound(0)); //index of last element of a[1] is 2
             Console.ReadLine();
+
+            /*
+            a = new int[] { 1,2 };
+            a.Mode();
+            a.OrderBy(i => i);
+            a.ToArray();
+            a.Mean();
+            a.Average();
+            */
         }
     }
 }

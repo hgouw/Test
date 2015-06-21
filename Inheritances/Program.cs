@@ -79,8 +79,27 @@ namespace Inheritance
         }
     }
 
+    class Employee
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+    class Staff : Employee
+    {
+        public string Department { get; set; }
+    }
+    class Manager : Employee
+    {
+        public int Staff { get; set; }
+    }
+
     class Program
     {
+        static void Modify(Employee employee)
+        {
+            //employee.Department = "xxx";
+        }
+
         static void Main(string[] args)
         {
             var base3 = new Base3(true);
@@ -98,6 +117,10 @@ namespace Inheritance
 
             new Z();
             Console.ReadLine();
+
+            Staff staff = new Staff { Name = "Herman", Age = 53, Department = "IMT" };
+            Manager manager = new Manager { Name = "Hamish", Age = 53, Staff = 6 };
+            Modify(staff);
         }
     }
 }

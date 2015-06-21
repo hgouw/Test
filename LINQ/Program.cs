@@ -4,8 +4,17 @@ using System.Linq;
 
 namespace LINQ
 {
+    class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
     public static class LINQExtension
     {
+        /// <summary>
+        /// Median is an extension method to LINQ
+        /// </summary>
         public static double Median(this IEnumerable<double> source)
         {
             if (source.Count() == 0)
@@ -34,8 +43,42 @@ namespace LINQ
 
     class Program
     {
+
+        static IList<string> CreateCollection()
+        {
+            return new List<string>() { "Herman", "Helen", "Sarah", "Olivia" };
+        }
+
+        static IList<Person> CreateFamily()
+        {
+            return new List<Person>() {
+                                        new Person { Name = "Herman", Age = 55 },
+                                        new Person { Name = "Helen", Age = 43 },
+                                        new Person { Name = "Sarah", Age = 11 },
+                                        new Person { Name = "Olivia", Age = 7 }
+                                      };
+
+        }
+
         static void Main(string[] args)
         {
+            var collection = CreateCollection();
+            foreach (var s in collection)
+            {
+                Console.WriteLine(s);
+            }
+            var family = CreateFamily();
+            foreach (var p in family)
+            {
+                Console.WriteLine(p.Age);
+            }
+            var adults = from p in family where p.Age > 17 select p;
+            foreach (var p in adults)
+            {
+                Console.WriteLine(p.Name);
+            }
+            Console.WriteLine();
+            
             var timesheets = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
             var authorizationRequests = new int[] { 2, 4, 5, 7, 9, 11 };
             var selectedTimesheets = timesheets.Where(x => authorizationRequests.Contains(x)).ToList();
@@ -60,14 +103,19 @@ namespace LINQ
             Console.WriteLine();
 
             double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };
-            var median = numbers1.Median();
+            var median = numbers1.Median(); // Median is an extension method to LINQ
             Console.WriteLine("Median = " + median);
             Console.WriteLine();
 
+            /*
             var family = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
             var names = family.OrderBy(x => x.Length); // sorted by length from min to max
             foreach (string name in names)
                 Console.WriteLine(name);
+            Console.WriteLine();
+            var longest = family.Max(x => x.Length); // get maximum length of the names
+            Console.WriteLine(longest);
+            */
 
             Console.ReadLine();
         }

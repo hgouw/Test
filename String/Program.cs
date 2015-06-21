@@ -10,8 +10,8 @@ namespace String
     {
         static void Main(string[] args)
         {
-            System.String s1 = "abc";
-            System.String s2 = "def";
+            string s1 = "abc";
+            string s2 = "def";
             s1 = s1 + s2;
             Console.WriteLine("s1 = {0}", s1);
             Console.ReadLine();
@@ -23,12 +23,23 @@ namespace String
                 Console.WriteLine(account);
             Console.ReadLine();
 
-            var str = "Line 1" + Environment.NewLine + "Line 2";
-            Console.WriteLine(str);
+            var s = "Line 1" + Environment.NewLine + "Line 2";
+            Console.WriteLine(s);
             Console.ReadLine();
 
-            str = string.Format("{0:000}", 1234);
-            Console.WriteLine(str);
+            s = string.Format("{0:000}", 1234);
+            Console.WriteLine(s);
+            Console.ReadLine();
+
+            s1 = "abc";
+            s2 = "def";
+            s = s1 + s2;
+            Console.WriteLine(s);
+            //s1 = s1 * s2; // No such operator
+            //s1.Append(s2); // No such method
+            //s1.Concat(s2); // Concat is a static method
+            s = System.String.Concat(s1, s2);
+            Console.WriteLine(s);
             Console.ReadLine();
         }
     }
