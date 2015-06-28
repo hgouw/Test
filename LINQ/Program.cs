@@ -73,7 +73,12 @@ namespace LINQ
                 Console.WriteLine(p.Age);
             }
             var adults = from p in family where p.Age > 17 select p;
+            var kids = family.Where(p => p.Age < 18); 
             foreach (var p in adults)
+            {
+                Console.WriteLine(p.Name);
+            }
+            foreach (var p in kids)
             {
                 Console.WriteLine(p.Name);
             }
