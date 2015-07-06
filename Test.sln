@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{09C83048-593C-4AD9-AC6E-6A9888C0D54F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterface", "ExplicitInterface\ExplicitInterface.csproj", "{635B09C9-07EE-4AB2-96FA-D81BB75B3664}"
@@ -48,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography", "Cryptography\Cryptography.csproj", "{BD1AB441-31CF-4EAE-8CA1-D53E6B61815D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Type", "Type\Type.csproj", "{BE395B26-884E-4D2D-A4E2-76C38CF7587F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{F392990D-F5C4-462C-B7B0-7B8C2771134E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +155,10 @@ Global
 		{BE395B26-884E-4D2D-A4E2-76C38CF7587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE395B26-884E-4D2D-A4E2-76C38CF7587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE395B26-884E-4D2D-A4E2-76C38CF7587F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F392990D-F5C4-462C-B7B0-7B8C2771134E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F392990D-F5C4-462C-B7B0-7B8C2771134E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F392990D-F5C4-462C-B7B0-7B8C2771134E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F392990D-F5C4-462C-B7B0-7B8C2771134E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
