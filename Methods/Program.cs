@@ -22,12 +22,14 @@ namespace Method
         {
             a = a * 2;
             b = b * 2;
-            c = c * 2;
+            c = c * 2; // Compile error - use of unassigned out parameter
         }
         */
 
         static void Main(string[] args)
         {
+
+
             Display(1);
             Display("1");
             //Display(null);  // Compile error (ambiguous call) - int? and string can both have null values.
