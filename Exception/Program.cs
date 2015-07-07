@@ -26,7 +26,7 @@ namespace Exception
                 }
                 catch (System.Exception ex)
                 {
-                    Console.WriteLine("Caught inner General Exception");
+                    Console.WriteLine("Caught inner General Exception - " + ex.Message);
                     throw;
                 }
             }
@@ -36,7 +36,7 @@ namespace Exception
             }
             catch (System.Exception ex)
             {
-                Console.WriteLine("Caught outer General Exception");
+                Console.WriteLine("Caught outer General Exception - " + ex.Message);
             }
         }
     }

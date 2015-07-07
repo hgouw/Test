@@ -29,7 +29,7 @@ namespace ExplicitInterface
         }
         void I1.A() // Explicit implementation
         {
-            Console.WriteLine("I1.A()");
+            Console.WriteLine("D.I1.A()");
         }
     }
     class E : I1, I2
@@ -40,18 +40,18 @@ namespace ExplicitInterface
         }
         void I1.A() // Explicit implementation
         {
-            Console.WriteLine("I1.A()");
+            Console.WriteLine("E.I1.A()");
         }
         void I2.A() // Explicit implementation
         {
-            Console.WriteLine("I2.A()");
+            Console.WriteLine("E.I2.A()");
         }
     }
     class F : I1
     {
         void I1.A() // Explicit implementation
         {
-            Console.WriteLine("I1.A()");
+            Console.WriteLine("F.I1.A()");
         }
     }
     class G : I1

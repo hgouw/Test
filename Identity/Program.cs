@@ -19,6 +19,5 @@ namespace Identity
             Console.WriteLine("GetUserDomainName = " + GetUserDomainNameGetUserName());
             Console.ReadLine();
         }
-
     }
 }

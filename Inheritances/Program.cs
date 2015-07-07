@@ -37,21 +37,21 @@ namespace Inheritance
     {
         public virtual void ABC()
         {
-            Console.WriteLine("A");
+            Console.WriteLine("A.ABC");
         }
     }
     public class B : A
     {
         public override void ABC()
         {
-            Console.WriteLine("B");
+            Console.WriteLine("B.ABC");
         }
     }
     public class C : B
     {
         public new void ABC()
         {
-            Console.WriteLine("C");
+            Console.WriteLine("C.ABC");
         }
     }
 

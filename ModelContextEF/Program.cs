@@ -5,20 +5,13 @@ using System.Data.Entity;
 
 namespace ModelContextEF
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-
-    public class IndustryGroup
+    class IndustryGroup
     {
         [Key]
         public string Group { get; set; }
     }
 
-    public class Company
+    class Company
     {
         [Key]
         public string Code { get; set; }
@@ -28,7 +21,7 @@ namespace ModelContextEF
         public IndustryGroup IndustryGroup { get; set; }
     }
 
-    public class EndOfDay
+    class EndOfDay
     {
         [Key, Column(Order = 1), ForeignKey("Company")]
         public string Code { get; set; }
@@ -38,14 +31,22 @@ namespace ModelContextEF
         public decimal High { get; set; }
         public decimal Low { get; set; }
         public decimal Last { get; set; }
+        public int Volume { get; set; }
 
         public Company Company { get; set; }
     }
 
-    public class Context : DbContext
+    class Context : DbContext
     {
         public DbSet<IndustryGroup> IndustryGroups { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<EndOfDay> EndOfDays { get; set; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
     }
 }

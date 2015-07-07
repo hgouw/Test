@@ -22,9 +22,12 @@ namespace LINQ
                 throw new InvalidOperationException("Cannot compute median for an empty set.");
             }
 
+            /*
             var sortedList = from number in source
                              orderby number
                              select number;
+            */
+            var sortedList = source.OrderBy(x => x);
 
             int itemIndex = (int)sortedList.Count() / 2;
 
@@ -72,8 +75,8 @@ namespace LINQ
             {
                 Console.WriteLine(p.Age);
             }
-            var adults = from p in family where p.Age > 17 select p;
-            var kids = family.Where(p => p.Age < 18); 
+            var adults = from p in family where p.Age > 17 select p; // Query syntax
+            var kids = family.Where(p => p.Age < 18);  // Lambda syntax
             foreach (var p in adults)
             {
                 Console.WriteLine(p.Name);
@@ -86,7 +89,7 @@ namespace LINQ
             
             var timesheets = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
             var authorizationRequests = new int[] { 2, 4, 5, 7, 9, 11 };
-            var selectedTimesheets = timesheets.Where(x => authorizationRequests.Contains(x)).ToList();
+            var selectedTimesheets = timesheets.Where(x => authorizationRequests.Contains(x));
             foreach (int i in selectedTimesheets)
             {
                 Console.Write("{0} ", i);
@@ -112,15 +115,13 @@ namespace LINQ
             Console.WriteLine("Median = " + median);
             Console.WriteLine();
 
-            /*
-            var family = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
-            var names = family.OrderBy(x => x.Length); // sorted by length from min to max
+            var gouw = new string[] { "Herman", "Helen", "Sarah", "Olivia" };
+            var names = gouw.OrderBy(x => x.Length); // sorted by length from min to max (ascending)
             foreach (string name in names)
                 Console.WriteLine(name);
             Console.WriteLine();
-            var longest = family.Max(x => x.Length); // get maximum length of the names
-            Console.WriteLine(longest);
-            */
+            var sortest = gouw.Min(x => x.Length); // get shortest length of the names
+            Console.WriteLine(sortest);
 
             Console.ReadLine();
         }

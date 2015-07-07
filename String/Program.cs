@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace String
 {
@@ -24,10 +20,6 @@ namespace String
             Console.ReadLine();
 
             var s = "Line 1" + Environment.NewLine + "Line 2";
-            Console.WriteLine(s);
-            Console.ReadLine();
-
-            s = string.Format("{0:000}", 1234);
             Console.WriteLine(s);
             Console.ReadLine();
 

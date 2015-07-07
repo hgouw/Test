@@ -16,7 +16,7 @@ namespace Enumeration
             Saving
         }
 
-        [Flags]
+        [Flags] // The enumeration Direction allows the assignment of multiple values to the enumeration
         enum Direction
         {
             None = 0,

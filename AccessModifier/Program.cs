@@ -1,8 +1,8 @@
 ﻿namespace AccessModifier
 {
-    enum Enumeration { enum1, enum2, enum3 } // Property is public by default
+    enum Enumeration { enum1, enum2, enum3 } // Enumeration is public by default
 
-    class Class // Constructor is internal by default
+    class Class // Class is internal by default
     {
         public Class() { } // Constructor is private by default
         public int field; // Field is private by default

@@ -7,6 +7,18 @@ using System.Threading.Tasks;
 
 namespace CodeFirstEF
 {
+    class User
+    {
+        public int UserId { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    class UserContext : DbContext
+    {
+        public DbSet<User> Users { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -31,17 +43,5 @@ namespace CodeFirstEF
             }
             Console.WriteLine();
         }
-    }
-
-    public class User
-    {
-        public int UserId { get; set; }
-        public string Name  { get; set; }
-        public int Age { get; set; }
-    }
-
-    public class UserContext : DbContext
-    {
-        public DbSet<User> Users { get; set; }
     }
 }

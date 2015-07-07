@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Delegate
 {
@@ -10,9 +6,9 @@ namespace Delegate
     {
         public delegate void WriteDelegate(string msg);
 
-        public class Log
+        public static class Log
         {
-            public void Write(string msg)
+            public static void Write(string msg)
             {
                 Console.WriteLine(msg);
             }
@@ -20,8 +16,9 @@ namespace Delegate
 
         static void Main(string[] args)
         {
-            Log log = new Log();
-            WriteDelegate writeDelegate = new WriteDelegate(log.Write);
+            //Log log = new Log();
+            //WriteDelegate writeDelegate = new WriteDelegate(log.Write);
+            WriteDelegate writeDelegate = new WriteDelegate(Log.Write);
             writeDelegate("Hello World!");
             Console.ReadLine();
         }

@@ -33,6 +33,13 @@ namespace Type
             Console.WriteLine(float_.GetType().FullName);
             Console.WriteLine(typeof(float));
 
+            /*
+            long val=30000;
+            int i = (int)val;
+            int j = static_cast<int>(val);
+            int k = checked((int)val);
+            */
+
             Console.ReadLine();
         }
     }

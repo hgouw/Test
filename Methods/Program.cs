@@ -18,7 +18,7 @@ namespace Method
         }
 
         /*
-        static void MyFunction(int a, ref int b, out int c)
+        static void Func(int a, ref int b, out int c)
         {
             a = a * 2;
             b = b * 2;
