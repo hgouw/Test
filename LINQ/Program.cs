@@ -67,7 +67,7 @@ namespace LINQ
         {
             CompanyDataContext company = new CompanyDataContext();
             var cpu = company.Companies.Where(x => x.Code == "CPU").ToList();
-            Console.WriteLine(cpu[0].Group); // when the SQL script is generated and run
+            Console.WriteLine(cpu[0].Group); // This is when the SQL script is generated and run
 
             var collection = CreateCollection();
             foreach (var s in collection)
@@ -79,8 +79,8 @@ namespace LINQ
             {
                 Console.WriteLine(p.Age);
             }
-            var adults = from p in family where p.Age > 17 select p; // Query syntax
-            var kids = family.Where(p => p.Age < 18);  // Lambda syntax
+            var adults = from p in family where p.Age > 17 select p; // Query syntax (SQL like query expression)
+            var kids = family.Where(p => p.Age < 18);  // Lambda syntax (Lambda expression)
             foreach (var p in adults)
             {
                 Console.WriteLine(p.Name);
@@ -109,7 +109,7 @@ namespace LINQ
                 Console.WriteLine(element);
             Console.WriteLine();
 
-            var query2 = colours.Where(x => x.Length == x.Max()); // TODO - using max
+            var query2 = colours.Where(x => x.Length == x.Min()); // TODO - using max
             foreach (var element in query2)
                 Console.WriteLine(element);
             Console.WriteLine();
