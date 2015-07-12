@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Format", "Format\Format.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{395FBB50-21C9-46C2-8D31-EC91CD31A229}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp", "WhatsApp\WhatsApp.csproj", "{74ACA278-DA2F-427E-A508-2768E6C42532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{395FBB50-21C9-46C2-8D31-EC91CD31A229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395FBB50-21C9-46C2-8D31-EC91CD31A229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395FBB50-21C9-46C2-8D31-EC91CD31A229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74ACA278-DA2F-427E-A508-2768E6C42532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74ACA278-DA2F-427E-A508-2768E6C42532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74ACA278-DA2F-427E-A508-2768E6C42532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74ACA278-DA2F-427E-A508-2768E6C42532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
