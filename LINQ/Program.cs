@@ -65,9 +65,12 @@ namespace LINQ
 
         static void Main(string[] args)
         {
-            CompanyDataContext company = new CompanyDataContext();
-            var cpu = company.Companies.Where(x => x.Code == "CPU").ToList();
-            Console.WriteLine(cpu[0].Group); // This is when the SQL script is generated and run
+            CompanyDataContext context = new CompanyDataContext();
+            var cs = context.Companies.Where(x => x.Code.StartsWith("C"));
+            var companies = cs.ToList();
+            foreach (var company in companies)
+                Console.WriteLine(company.Code);
+            Console.ReadLine();
 
             var collection = CreateCollection();
             foreach (var s in collection)

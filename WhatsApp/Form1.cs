@@ -15,6 +15,9 @@ namespace WhatsApp
         public Form1()
         {
             InitializeComponent();
+            Color MyColor = Color.FromArgb(0x00, 0xFF, 0x00);
+            MyColor = Color.FromName("Green");
+            MyColor = Color.Green;
         }
     }
 }
