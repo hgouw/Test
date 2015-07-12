@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Array
 {
@@ -13,14 +14,12 @@ namespace Array
             Console.WriteLine(a[1].GetUpperBound(0)); //index of last element of a[1] is 2 (3-1)
             Console.ReadLine();
 
-            /*
-            a = new int[] { 1,2 };
-            a.Mode();
-            a.OrderBy(i => i);
-            a.ToArray();
-            a.Mean();
-            a.Average();
-            */
+            var arr = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //arr.Mode();
+            //arr.OrderBy(i => i);
+            //arr.ToArray();
+            //arr.Mean();
+            //arr.Average();
         }
     }
 }

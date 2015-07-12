@@ -10,6 +10,9 @@
         public void Method() { } // Property is private by default
     }
 
+    // Interface is internal by default
+    // Struct is internal by default
+
     class Program
     {
         static void Main(string[] args)

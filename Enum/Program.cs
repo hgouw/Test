@@ -27,6 +27,7 @@ namespace Enumeration
             Vertical = Left | Right,
             Horizontal = Top | Bottom,
             All = Vertical | Horizontal
+            //All = Left | Top | Right | Bottom
         }
 
         static void Main(string[] args)
