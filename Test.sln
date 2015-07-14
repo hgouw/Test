@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp", "WhatsApp\WhatsA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj", "{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoSQL", "LINQtoSQL\LINQtoSQL.csproj", "{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataModel", "EntityDataModel\EntityDataModel.csproj", "{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
