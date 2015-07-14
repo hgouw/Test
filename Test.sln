@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstEF", "CodeFirstEF\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DateTime\DateTime.csproj", "{22992DB6-03CB-4AB9-B832-3D496ECABD40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelContextEF", "ModelContextEF\ModelContextEF.csproj", "{79B7B5CA-13B1-4F87-868B-AA5F13A2DF22}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity", "Identity\Identity.csproj", "{46EC8F9A-9339-44C9-8936-FCD048832ECB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap", "Bootstrap\Bootstrap.csproj", "{1A914B06-9AFE-4239-B698-3615C6F5AE88}"
@@ -61,10 +59,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp", "WhatsApp\WhatsA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj", "{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoSQL", "LINQtoSQL\LINQtoSQL.csproj", "{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataModel", "EntityDataModel\EntityDataModel.csproj", "{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,10 +89,6 @@ Global
 		{22992DB6-03CB-4AB9-B832-3D496ECABD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22992DB6-03CB-4AB9-B832-3D496ECABD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22992DB6-03CB-4AB9-B832-3D496ECABD40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79B7B5CA-13B1-4F87-868B-AA5F13A2DF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79B7B5CA-13B1-4F87-868B-AA5F13A2DF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79B7B5CA-13B1-4F87-868B-AA5F13A2DF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79B7B5CA-13B1-4F87-868B-AA5F13A2DF22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46EC8F9A-9339-44C9-8936-FCD048832ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46EC8F9A-9339-44C9-8936-FCD048832ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46EC8F9A-9339-44C9-8936-FCD048832ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -187,14 +177,6 @@ Global
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B56E0A-BD3A-4279-A1A8-0CE253B9CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14B3B522-CC2D-4C0B-A6C1-F259A62A2F4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
