@@ -42,10 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Company.designer.cs">
+    <Compile Include="ASX.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Company.dbml</DependentUpon>
+      <DependentUpon>ASX.dbml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,9 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Company.dbml">
+    <None Include="ASX.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Company.designer.cs</LastGenOutput>
+      <LastGenOutput>ASX.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -71,8 +71,8 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Company.dbml.layout">
-      <DependentUpon>Company.dbml</DependentUpon>
+    <None Include="ASX.dbml.layout">
+      <DependentUpon>ASX.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

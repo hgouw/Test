@@ -65,12 +65,15 @@ namespace LINQ
 
         static void Main(string[] args)
         {
-            CompanyDataContext context = new CompanyDataContext();
-            var cs = context.Companies.Where(x => x.Code.StartsWith("C"));
-            var companies = cs.ToList();
-            foreach (var company in companies)
-                Console.WriteLine(company.Code);
-            Console.ReadLine();
+            ASXDataContext context = new ASXDataContext();
+            var cpu = context.Companies.Where(c => c.Code == "CPU");
+
+            //CompanyDataContext context = new CompanyDataContext();
+            //var cs = context.Companies.Where(x => x.Code.StartsWith("C"));
+            //var companies = cs.ToList();
+            //foreach (var company in companies)
+            //    Console.WriteLine(company.Code);
+            //Console.ReadLine();
 
             var collection = CreateCollection();
             foreach (var s in collection)
