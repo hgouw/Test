@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C087D4BC-CB0D-4F95-9D52-9C26F9F75A60}</ProjectGuid>
+    <ProjectGuid>1fb66621-4450-4e78-bfd7-df07409ca0be</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EntityDataModel</RootNamespace>
@@ -32,19 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,59 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ASX.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ASX.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ASX.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ASX.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ASX.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ASX.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Company.cs">
-      <DependentUpon>ASX.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EndOfDay.cs">
-      <DependentUpon>ASX.tt</DependentUpon>
-    </Compile>
-    <Compile Include="IndustryGroup.cs">
-      <DependentUpon>ASX.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WatchList.cs">
-      <DependentUpon>ASX.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ASX.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ASX.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ASX.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ASX.edmx</DependentUpon>
-      <LastGenOutput>ASX.Context.cs</LastGenOutput>
-    </None>
-    <None Include="ASX.edmx.diagram">
-      <DependentUpon>ASX.edmx</DependentUpon>
-    </None>
-    <None Include="ASX.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ASX.edmx</DependentUpon>
-      <LastGenOutput>ASX.cs</LastGenOutput>
-    </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
