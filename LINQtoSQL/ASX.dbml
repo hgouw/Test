@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ASX.Test" Class="ASXDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SNOOPY-AIO\SQLEXPRESS;Initial Catalog=ASX.Test;Integrated Security=True" SettingsObjectName="LINQtoSQL.Properties.Settings" SettingsPropertyName="ASX_TestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Companies" Member="Companies">
+    <Type Name="Company">
+      <Column Name="Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Group]" Member="Group" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Company_EndOfDay" Member="EndOfDays" ThisKey="Code" OtherKey="Code" Type="EndOfDay" />
+      <Association Name="Company_WatchList" Member="WatchList" ThisKey="Code" OtherKey="Code" Type="WatchList" Cardinality="One" />
+      <Association Name="IndustryGroup_Company" Member="IndustryGroup" ThisKey="Group" OtherKey="Group" Type="IndustryGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EndOfDays" Member="EndOfDays">
+    <Type Name="EndOfDay">
+      <Column Name="Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Open]" Member="Open" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="High" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="Low" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="Last" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="Volume" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Company_EndOfDay" Member="Company" ThisKey="Code" OtherKey="Code" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IndustryGroups" Member="IndustryGroups">
+    <Type Name="IndustryGroup">
+      <Column Name="[Group]" Member="Group" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="IndustryGroup_Company" Member="Companies" ThisKey="Group" OtherKey="Group" Type="Company" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WatchLists" Member="WatchLists">
+    <Type Name="WatchList">
+      <Column Name="Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Company_WatchList" Member="Company" ThisKey="Code" OtherKey="Code" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
