@@ -67,6 +67,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WebForm1.aspx" />
     <EntityDeploy Include="ASXModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ASXModel.Designer.cs</LastGenOutput>
@@ -127,6 +128,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WatchList.cs">
       <DependentUpon>ASXModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
