@@ -10,10 +10,10 @@ namespace MVCDemo.Controllers
     public class CompanyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/Display
+        /// To display this page type in http://localhost/MVCDemo/Company/List
         /// </summary>
         /// <returns></returns>
-        public ActionResult Display()
+        public ActionResult List()
         {
             var companyContext = new CompanyContext();
             var companies = companyContext.Companies.ToList();
