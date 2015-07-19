@@ -9,7 +9,7 @@
 <div style="font-family:Arial">
     <h2>Company List</h2>
     <ul>
-        @foreach (Company company in @Model)
+        @foreach (var company in @Model)
         {
             <li>
                 @Html.ActionLink(company.Code, "Details", new { code = company.Code })
