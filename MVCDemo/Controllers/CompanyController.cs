@@ -10,18 +10,32 @@ namespace MVCDemo.Controllers
     public class CompanyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/Details
+        /// To display this page type in http://localhost/MVCDemo/Company/Display
         /// </summary>
         /// <returns></returns>
-        public ActionResult Details()
+        public ActionResult Display()
         {
-            Company company =
-                new Company
-                {
-                    Code = "CPU",
-                    Name = "COMPUTERSHARE LIMITED",
-                    Group = "Software & Services"
-                };
+            CompanyContext companyContext = new CompanyContext();
+            var companies = companyContext.Companies.ToList();
+            return View(companies);
+        }
+        
+        /// <summary>
+        /// To display this page type in http://localhost/MVCDemo/Company/Details/xyz
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Details(string id)
+        {
+            //Company company =
+            //    new Company
+            //    {
+            //        Code = "CPU",
+            //        Name = "COMPUTERSHARE LIMITED",
+            //        Group = "Software & Services"
+            //    };
+
+            CompanyContext companyContext = new CompanyContext();
+            var company = companyContext.Companies.Single(c => c.Code == id);
             return View(company);
         }
     }
