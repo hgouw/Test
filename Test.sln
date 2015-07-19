@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaFirstEF", "SchemaFirstEF\SchemaFirstEF.csproj", "{D77DE1EC-1B0A-441D-B1E0-066DDE5A6632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,16 @@ Global
 		{D77DE1EC-1B0A-441D-B1E0-066DDE5A6632}.Release|ARM.ActiveCfg = Release|Any CPU
 		{D77DE1EC-1B0A-441D-B1E0-066DDE5A6632}.Release|x64.ActiveCfg = Release|Any CPU
 		{D77DE1EC-1B0A-441D-B1E0-066DDE5A6632}.Release|x86.ActiveCfg = Release|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Release|x64.ActiveCfg = Release|Any CPU
+		{1AB1A6E8-6245-4C39-AFD1-282EB79A3877}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
