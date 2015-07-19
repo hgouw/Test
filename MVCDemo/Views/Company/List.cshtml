@@ -12,8 +12,9 @@
         @foreach (Company company in @Model)
         {
             <li>
-                @Html.ActionLink(company.Code, "Details", new { id = company.Code })
+                @Html.ActionLink(company.Code, "Details", new { code = company.Code })
             </li>
         }
     </ul>
+    @Html.ActionLink("Back to Group List", "List", "Group")
 </div>

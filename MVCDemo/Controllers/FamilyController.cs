@@ -11,7 +11,6 @@ namespace MVCDemo.Controllers
         /// <summary>
         /// To display this page type in http://localhost/MVCDemo/Family/Members
         /// </summary>
-        /// <returns></returns>
         public ActionResult Members()
         {
             ViewBag.Members =

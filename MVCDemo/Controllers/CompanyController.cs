@@ -10,21 +10,19 @@ namespace MVCDemo.Controllers
     public class CompanyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/List
+        /// To display this page type in http://localhost/MVCDemo/Company/List?group=Group
         /// </summary>
-        /// <returns></returns>
-        public ActionResult List()
+        public ActionResult List(string group)
         {
             var companyContext = new CompanyContext();
-            var companies = companyContext.Companies.ToList();
+            var companies = companyContext.Companies.Where(c => c.Group == group).ToList();
             return View(companies);
         }
         
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/Details/xyz
+        /// To display this page type in http://localhost/MVCDemo/Company/Details?code=CompanyCode
         /// </summary>
-        /// <returns></returns>
-        public ActionResult Details(string id)
+        public ActionResult Details(string code)
         {
             //Company company =
             //    new Company
@@ -35,7 +33,7 @@ namespace MVCDemo.Controllers
             //    };
 
             var companyContext = new CompanyContext();
-            var company = companyContext.Companies.Single(c => c.Code == id);
+            var company = companyContext.Companies.Single(c => c.Code == code);
             return View(company);
         }
     }
