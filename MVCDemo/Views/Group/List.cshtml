@@ -1,0 +1,19 @@
+﻿@using MVCDemo.Models
+
+@model IEnumerable<IndustryGroup>
+
+@{
+    ViewBag.Title = "Group List";
+}
+
+<div style="font-family:Arial">
+    <h2>Group List</h2>
+    <ul>
+        @foreach (var group in @Model)
+        {
+            <li>
+                @Html.ActionLink(group.Group, "List", "Company", new { group = group.Group}, null)
+            </li>
+        }
+    </ul>
+</div>

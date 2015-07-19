@@ -9,5 +9,6 @@ namespace MVCDemo.Models
     public class CompanyContext : DbContext
     {
         public DbSet<Company> Companies { get; set; }
+        public DbSet<IndustryGroup> IndustryGroups { get; set; }
     }
 }
