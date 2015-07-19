@@ -15,7 +15,7 @@ namespace MVCDemo.Controllers
         /// <returns></returns>
         public ActionResult Display()
         {
-            CompanyContext companyContext = new CompanyContext();
+            var companyContext = new CompanyContext();
             var companies = companyContext.Companies.ToList();
             return View(companies);
         }
@@ -34,7 +34,7 @@ namespace MVCDemo.Controllers
             //        Group = "Software & Services"
             //    };
 
-            CompanyContext companyContext = new CompanyContext();
+            var companyContext = new CompanyContext();
             var company = companyContext.Companies.Single(c => c.Code == id);
             return View(company);
         }
