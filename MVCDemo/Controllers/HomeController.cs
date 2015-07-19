@@ -9,7 +9,7 @@ namespace MVCDemo.Controllers
     public class HomeController : Controller
     {
         /// <summary>
-        /// To invoke this page type in http://localhost/MVCDemo/Home/Home/xx?querystr1=yy&querystr2=zz
+        /// To display this page type in http://localhost/MVCDemo/Home/Home/xx?querystr1=yy&querystr2=zz
         /// where id, querystr1 and querystr2 are optional
         /// </summary>
         public string Home(string id, string querystr1, string querystr2)
