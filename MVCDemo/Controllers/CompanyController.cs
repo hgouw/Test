@@ -24,14 +24,6 @@ namespace MVCDemo.Controllers
         /// </summary>
         public ActionResult Details(string code)
         {
-            //Company company =
-            //    new Company
-            //    {
-            //        Code = "CPU",
-            //        Name = "COMPUTERSHARE LIMITED",
-            //        Group = "Software & Services"
-            //    };
-
             var companyContext = new CompanyContext();
             var company = companyContext.Companies.Single(c => c.Code == code);
             return View(company);
