@@ -7,7 +7,8 @@ using System.Web;
 
 namespace MVCDemo.Models
 {
-    [Table("IndustryGroups")]
+    // The following attribute is required if the table name is other than IndustryGroups (the plural form of the class name)
+    // [Table("IndustryGroups")]
     public class IndustryGroup
     {
         [Key]

@@ -7,7 +7,6 @@ using System.Web;
 
 namespace MVCDemo.Models
 {
-    [Table("Companies")]
     public class Company
     {
         [Key]
