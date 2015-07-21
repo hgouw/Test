@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+@{var str = "61060";}
+@{var val = str.AsInt(123);}
+<p>The value is @val</p>
+
+@{var price = 60;}
+@if (price > 50)
+{
+    <p>The price is too high</p>
+}
+else
+{
+    <p>The price is okay</p>
+}
+
+@{
+    var result=0;
+    for (int i = 0; i < 6; i++)
+    {
+        result = result + i;        
+    }
+}
+<h3>The result is = @result</h3>
