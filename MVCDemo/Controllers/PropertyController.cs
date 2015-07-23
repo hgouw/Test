@@ -25,11 +25,20 @@ namespace MVCDemo.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(FormCollection formCollection)
+        //public ActionResult Create(FormCollection formCollection)
+        //{
+        //    foreach (var key in formCollection.AllKeys)
+        //    {
+        //        Response.Write(string.Format("{0} - {1}<br/>", key, formCollection[key]));
+        //    }
+        //    return View();
+        //}
+        public ActionResult Create(Property property)
         {
-            foreach (var key in formCollection.AllKeys)
+            if (ModelState.IsValid)
             {
-                Response.Write(string.Format("{0} - {1}<br/>", key, formCollection[key]));
+                // Save the property
+                return RedirectToAction("List");
             }
             return View();
         }
