@@ -237,6 +237,7 @@
     <Content Include="Views\Test\Test.cshtml" />
     <Content Include="Views\Property\List.cshtml" />
     <Content Include="Views\Property\Create.cshtml" />
+    <Content Include="Views\Property\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

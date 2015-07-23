@@ -25,19 +25,34 @@ namespace MVCDemo.Controllers
         }
 
         [HttpPost]
-        //public ActionResult Create(FormCollection formCollection)
-        //{
-        //    foreach (var key in formCollection.AllKeys)
-        //    {
-        //        Response.Write(string.Format("{0} - {1}<br/>", key, formCollection[key]));
-        //    }
-        //    return View();
-        //}
         public ActionResult Create(Property property)
         {
             if (ModelState.IsValid)
             {
-                // Save the property
+                var propertyContext = new PropertyContext();
+                propertyContext.Properties.Add(property);
+                propertyContext.SaveChanges();
+                return RedirectToAction("List");
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Edit(string number, string street, string suburb, string state, string postcode)
+        {
+            var propertyContext = new PropertyContext();
+            var property = propertyContext.Properties.Single(p => p.Number == number && p.Street == street && p.Suburb == suburb);
+            return View(property);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Property property)
+        {
+            if (ModelState.IsValid)
+            {
+                var propertyContext = new PropertyContext();
+                propertyContext.Properties.Add(property);
+                propertyContext.SaveChanges();
                 return RedirectToAction("List");
             }
             return View();
