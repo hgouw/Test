@@ -65,6 +65,15 @@ namespace LINQ
 
         static void Main(string[] args)
         {
+            var query = from method in typeof(double).GetMethods()
+                        orderby method.Name
+                        group method by method.Name into groups
+                        select new { MethodName = groups.Key, NoOfOverloads = groups.Count() };
+
+            foreach (var item in query)
+                Console.WriteLine(item);
+            Console.ReadLine();
+
             var collection = CreateCollection();
             foreach (var s in collection)
             {
