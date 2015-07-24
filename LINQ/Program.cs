@@ -65,6 +65,19 @@ namespace LINQ
 
         static void Main(string[] args)
         {
+            var postCodes = new string[] { "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA" };
+            var states = new string[] { "New South Wales", "Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia" };
+            var statesWithCodes = postCodes.Zip(states, (code, state) => code + " - " + state);
+            foreach (var state in statesWithCodes)
+                Console.WriteLine(state);
+            Console.ReadLine();
+
+            var bigList = Enumerable.Range(1, 20);
+            var smallList = bigList.Take(6).Select(i => i * 100);
+            foreach (var i in smallList)
+                Console.WriteLine(i);
+            Console.ReadLine();
+
             var query = from method in typeof(double).GetMethods()
                         orderby method.Name
                         group method by method.Name into groups
