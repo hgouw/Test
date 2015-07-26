@@ -7,7 +7,7 @@
         public Class() { } // Constructor is private by default
         public int field; // Field is private by default
         public int Property { get; set; } // Property is private by default
-        public void Method() { } // Property is private by default
+        public void Method() { } // Method is private by default
     }
 
     // Interface is internal by default
