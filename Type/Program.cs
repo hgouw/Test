@@ -6,6 +6,28 @@ namespace Type
     {
         static void Main(string[] args)
         {
+            short a = 0;
+            short b = 0;
+            try
+            {
+                while (true)
+                {
+                    unchecked
+                    {
+                        a++;
+                    }
+                    checked
+                    {
+                        b++;
+                    }
+                }
+            }
+            catch
+            {
+                Console.WriteLine(a);
+                Console.WriteLine(b);
+            }
+            
             sbyte signedbyte_ = -1; // 8 bytes
             short short_ = -12; // 16 bytes
             int int_ = -123; // 32 bytes
@@ -19,6 +41,14 @@ namespace Type
             float float_ = 12.34f; // Requires suffix
             double double_ = 12.34;
             decimal decimal_ = 12.34m; // Requires suffix
+
+            Console.WriteLine(string.Format("byte = {0}", byte_));
+            Console.WriteLine(byte.MinValue);
+            Console.WriteLine(byte.MaxValue);
+            Console.WriteLine(byte_.GetType().Name);
+            Console.WriteLine(byte_.GetType().FullName);
+            Console.WriteLine(typeof(byte));
+            Console.WriteLine(default(byte));
 
             int_ = (int)double_; // Cannot implicitly convert double to int (narrowing)
             int_ = (int)unsignedint_; // Cannot implicitly convert uint to int (narrowing)
