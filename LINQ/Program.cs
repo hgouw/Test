@@ -65,6 +65,22 @@ namespace LINQ
 
         static void Main(string[] args)
         {
+            var ints1 = new int[3];
+            ints1[0] = 4;
+            ints1[1] = 3;
+            ints1[2] = 0;
+
+            // Array 2.
+            var ints2 = new int[3];
+            ints2[0] = 5;
+            ints2[1] = 4;
+            ints2[2] = 2;
+
+            var result = ints1.Join<int, int, int, int>(ints2,
+                                                        x => x + 1,
+                                                        y => y,
+                                                        (x, y) => x);
+            
             var postCodes = new string[] { "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA" };
             var states = new string[] { "New South Wales", "Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia" };
             var statesWithCodes = postCodes.Zip(states, (code, state) => code + " - " + state);
