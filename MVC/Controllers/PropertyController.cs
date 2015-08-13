@@ -11,7 +11,7 @@ namespace MVCDemo.Controllers
     public class PropertyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Property/List
+        /// To display this page type in http://localhost/MVC/Property/List
         /// </summary>
         public ActionResult List()
         {
@@ -22,7 +22,7 @@ namespace MVCDemo.Controllers
         }
 
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Property/Create
+        /// To display this page type in http://localhost/MVC/Property/Create
         /// </summary>
         [HttpGet]
         public ActionResult Create()
@@ -44,7 +44,7 @@ namespace MVCDemo.Controllers
         }
 
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Property/Edit?number=8&street=Abbey%20Place&suburb=Cherrybrook&state=NSW&postcode=2126
+        /// To display this page type in http://localhost/MVC/Property/Edit?number=8&street=Abbey%20Place&suburb=Cherrybrook&state=NSW&postcode=2126
         /// </summary>
         [HttpGet]
         public ActionResult Edit(string number, string street, string suburb, string state, string postcode)

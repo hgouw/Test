@@ -10,7 +10,7 @@ namespace MVCDemo.Controllers
     public class GroupController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Group/List
+        /// To display this page type in http://localhost/MVC/Group/List
         /// </summary>
         /// <returns></returns>
         public ActionResult List()

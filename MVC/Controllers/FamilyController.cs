@@ -9,7 +9,7 @@ namespace MVCDemo.Controllers
     public class FamilyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Family/Members
+        /// To display this page type in http://localhost/MVC/Family/Members
         /// </summary>
         public ActionResult Members()
         {

@@ -10,7 +10,7 @@ namespace MVCDemo.Controllers
     public class CompanyController : Controller
     {
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/List?group=Group
+        /// To display this page type in http://localhost/MVC/Company/List?group=Group
         /// </summary>
         public ActionResult List(string group)
         {
@@ -18,9 +18,9 @@ namespace MVCDemo.Controllers
             var companies = companyContext.Companies.Where(c => c.Group == group).ToList();
             return View(companies);
         }
-        
+
         /// <summary>
-        /// To display this page type in http://localhost/MVCDemo/Company/Details?code=CompanyCode
+        /// To display this page type in http://localhost/MVC/Company/Details?code=CompanyCode
         /// </summary>
         public ActionResult Details(string code)
         {
