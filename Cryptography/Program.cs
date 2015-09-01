@@ -11,12 +11,6 @@ namespace Cryptography
             SHA1 algorithm = SHA1.Create();
             byte[] data = algorithm.ComputeHash(Encoding.UTF8.GetBytes(value));
             string sha1 = "";
-            /*
-            for (int i = 0; i < data.Length; i++)
-            {
-                sha1 += data[i].ToString("x2").ToUpperInvariant();
-            }
-            */
             foreach (var datum in data)
             {
                 sha1 += datum.ToString("x2").ToUpperInvariant();

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using static System.Console;
 using static Helpers.Helper; // Using Static
 
 namespace CSharp6
@@ -12,17 +14,24 @@ namespace CSharp6
     {
         // Auto Property Initializers
         public string FirstName { get; set; } = "";
-        public string LastName { get; set; } = "";
+        public string OldName { get; set; } = "";
 
         // Expression-bodied Member
         // String Interpolation
-        public override string ToString() => $"{FirstName} - {LastName}";
+        public override string ToString() => $"{FirstName} - {OldName}";
     }
 
     class Program
     {
         static void Main(string[] args)
         {
+            // nameof
+            WriteLine(nameof(User));
+            WriteLine(nameof(User.Name));
+            WriteLine(nameof(Name.FirstName));
+            WriteLine(nameof(Name.ToString));
+            ReadLine();
+
             Dictionary<string, string> dict1 = new Dictionary<string, string>
             {
                 { "Herman", "Akong" },
@@ -40,12 +49,10 @@ namespace CSharp6
 
         void DisplayName(User user)
         {
-            if (Okay())
-            {
-            }
+            if (Okay()) {}
 
-            // Null Propagation Operator
-            var LastName = user?.Name?.LastName ?? "lastname unknown";
+            // Null Conditional Operator
+            var LastName = user?.Name?.OldName ?? "lastname unknown";
         }
     }
 }

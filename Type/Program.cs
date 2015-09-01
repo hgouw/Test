@@ -50,6 +50,8 @@ namespace Type
             Console.WriteLine(typeof(byte));
             Console.WriteLine(default(byte));
 
+            // Narrowing must be done explicitly
+            // Widening can be done implicitly
             int_ = (int)double_; // Cannot implicitly convert double to int (narrowing)
             int_ = (int)unsignedint_; // Cannot implicitly convert uint to int (narrowing)
             double_ = int_; // Implicit is allowed because it is widening (narrowing)

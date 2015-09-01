@@ -28,8 +28,6 @@ namespace Method
 
         static void Main(string[] args)
         {
-
-
             Display(1);
             Display("1");
             //Display(null);  // Compile error (ambiguous call) - int? and string can both have null values.
