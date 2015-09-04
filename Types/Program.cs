@@ -1,7 +1,9 @@
 ﻿using System;
 
-namespace Type
+namespace Types
 {
+    public class Herman { }
+
     class Program
     {
         static void Main(string[] args)
@@ -42,6 +44,14 @@ namespace Type
             double double_ = 12.34;
             decimal decimal_ = 12.34m; // Requires suffix
 
+            Herman herman = new Herman();
+            Console.WriteLine(typeof(Herman)); // Type.Herman
+            Console.WriteLine(herman.GetType()); // Type.Herman
+            Console.WriteLine(herman.GetType().Name); // Herman
+            Console.WriteLine(herman.GetType().FullName); // Type.Herman
+            Console.WriteLine(Type.GetType("Herman")); // returns null
+            Console.ReadLine();
+
             Console.WriteLine(string.Format("byte = {0}", byte_));
             Console.WriteLine(byte.MinValue);
             Console.WriteLine(byte.MaxValue);
@@ -58,6 +68,7 @@ namespace Type
             decimal_ = signedbyte_; // Implicit is allowed because it is widening (narrowing)
             double_ = (double)decimal_; // Cannot implicitly convert decimal to double (narrowing)
 
+            Console.WriteLine(int_.GetType());
             Console.WriteLine(int_.GetType().Name);
             Console.WriteLine(int_.GetType().FullName);
             Console.WriteLine(typeof(int));

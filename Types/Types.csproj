@@ -7,8 +7,8 @@
     <ProjectGuid>{BE395B26-884E-4D2D-A4E2-76C38CF7587F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Type</RootNamespace>
-    <AssemblyName>Type</AssemblyName>
+    <RootNamespace>Types</RootNamespace>
+    <AssemblyName>Types</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
