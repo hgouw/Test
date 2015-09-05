@@ -1,28 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeFirstEF
 {
-    class User
-    {
-        public int UserId { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-    }
-
-    class UserContext : DbContext
-    {
-        public DbSet<User> Users { get; set; }
-    }
 
     class Program
     {
         static void Main(string[] args)
         {
+            using (var db = new LogContext())
+            {
+                var log = new Log
+                {
+                    DateTime = DateTime.Now,
+                    Message = "Error during logging",
+                    Priority = Priorities.Highest
+                };
+                db.Logs.Add(log);
+                db.SaveChanges();
+            }
+
             using (var db = new UserContext())
             {
                 Console.WriteLine("Enter name:");
