@@ -7,9 +7,9 @@ namespace CodeFirstEF
 {
     public enum Priorities
     {
-        Highest = 0,
+        High = 0,
         Medium = 5,
-        Lowest = 10
+        Low = 10
     }
 
     public class Log

@@ -13,7 +13,7 @@ namespace CodeFirstEF
                 {
                     DateTime = DateTime.Now,
                     Message = "Error during logging",
-                    Priority = Priorities.Highest
+                    Priority = Priorities.High
                 };
                 db.Logs.Add(log);
                 db.SaveChanges();
