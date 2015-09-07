@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AutoMapper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ss")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AutoMapper")]
-[assembly: AssemblyCopyright("Copyright © 2015")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6dd1e51f-2b31-48f3-85eb-a3f607f06129")]
+[assembly: Guid("d34854aa-e3da-4504-872f-7c0443d6c47e")]
 
 // Version information for an assembly consists of the following four values:
 //
