@@ -28,19 +28,19 @@ namespace AutoMapper
         public string Name { get; set; }
     }
 
-    public class DateFormatter : IValueFormatter
-    {
-        public string FormatValue(ResolutionContext context)
-        {
-            return ((DateTime)context.SourceValue).ToLongDateString();
-        }
-    }
-
     public class VIPResolver : ValueResolver<bool, string>
     {
         protected override string ResolveCore(bool source)
         {
             return source ? "Y" : "N";
+        }
+    }
+
+    public class DateOfBirthResolver : ValueResolver<DateTime, string>
+    {
+        protected override string ResolveCore(DateTime source)
+        {
+            return source.ToLongDateString();
         }
     }
 
@@ -52,7 +52,7 @@ namespace AutoMapper
             Mapper.CreateMap<Customer, CustomerViewItem>()
                 .ForMember(cv => cv.FullName, m => m.MapFrom(s => s.FirstName + " " + s.LastName))
                 .ForMember(cv => cv.VIP, m => m.ResolveUsing<VIPResolver>().FromMember(x => x.VIP))
-                .ForMember(cv => cv.DateOfBirth, m => m.AddFormatter<DateFormatter>());
+                .ForMember(cv => cv.DateOfBirth, m => m.ResolveUsing<DateOfBirthResolver>().FromMember(x => x.DateOfBirth));
 
             program.Run();
         }
