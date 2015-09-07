@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameFiles", "RenameFiles\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileChangeNotifier", "FileSystemWatcher\FileChangeNotifier.csproj", "{EB8FCEBE-2E39-4940-A610-D55DE55EB7EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper", "AutoMapper\AutoMapper.csproj", "{205A2EBA-1AD3-4474-B114-C82A82734772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -501,6 +503,16 @@ Global
 		{EB8FCEBE-2E39-4940-A610-D55DE55EB7EA}.Release|x64.Build.0 = Release|Any CPU
 		{EB8FCEBE-2E39-4940-A610-D55DE55EB7EA}.Release|x86.ActiveCfg = Release|Any CPU
 		{EB8FCEBE-2E39-4940-A610-D55DE55EB7EA}.Release|x86.Build.0 = Release|Any CPU
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Debug|ARM.ActiveCfg = Debug|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Debug|x64.ActiveCfg = Debug|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Debug|x86.ActiveCfg = Debug|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Debug|x86.Build.0 = Debug|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Release|Any CPU.ActiveCfg = Release|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Release|ARM.ActiveCfg = Release|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Release|x64.ActiveCfg = Release|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Release|x86.ActiveCfg = Release|x86
+		{205A2EBA-1AD3-4474-B114-C82A82734772}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
