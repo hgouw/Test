@@ -15,18 +15,16 @@ namespace Sort
 
         static void Main(string[] args)
         {
-            List<Instrument> instruments = new List<Instrument> { };
+            SortedList<string, Instrument> instruments = new SortedList<string, Instrument> { };
             Stock stock = new Stock();
             Future future = new Future();
             Option option = new Option();
 
-            //TODO - sort a list of classes
-            instruments.Add(stock);
-            instruments.Add(future);
-            instruments.Add(option);
-            instruments.Sort();
-            foreach (Instrument instrument in instruments)
-                Console.WriteLine(instrument.ToString());
+            instruments.Add(nameof(stock), stock);
+            instruments.Add(nameof(future), future);
+            instruments.Add(nameof(option), option);
+            foreach (var instrument in instruments)
+                Console.WriteLine(instrument.Value);
             Console.ReadLine();
         }
     }
