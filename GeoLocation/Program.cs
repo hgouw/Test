@@ -11,28 +11,33 @@ namespace GeoLocation
     {
         static void Main(string[] args)
         {
-            GetLocationProperty();
+            double latitude;
+            double longitude;
+            GetLocation(out latitude, out longitude);
+            Console.WriteLine(string.Format("Latitude = {0} - Longitude = {1}, latitude, longitude"));
+            Console.ReadLine();
         }
 
-        static void GetLocationProperty()
+        static void GetLocation(out double latitude, out double longitude)
         {
+            latitude = longitude = 0;
+
             GeoCoordinateWatcher watcher = new GeoCoordinateWatcher();
 
-            // Do not suppress prompt, and wait 1000 milliseconds to start.
-            watcher.TryStart(false, TimeSpan.FromMilliseconds(10000000));
-
-            GeoCoordinate coord = watcher.Position.Location;
-
-            if (coord.IsUnknown != true)
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Lat: {0}, Long: {1}",
-                    coord.Latitude,
-                    coord.Longitude);
+                watcher.TryStart(false, // Do not suppress permissions prompt.
+                   TimeSpan.FromMilliseconds(1000)); // Wait 1000 ms to start.
+
+                GeoCoordinate coord = watcher.Position.Location;
+
+                if (coord.IsUnknown != true)
+                {
+                    latitude = watcher.Position.Location.Latitude;
+                    longitude = watcher.Position.Location.Longitude;
+                    break;
+                }
             }
-            else
-            {
-                Console.WriteLine("Unknown latitude and longitude.");
-            }
-        }    
+        }
     }
 }
