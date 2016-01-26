@@ -7,17 +7,17 @@ namespace CodeFirstEF
     {
         static void Main(string[] args)
         {
-            using (var db = new LogContext())
-            {
-                var log = new Log
-                {
-                    DateTime = DateTime.Now,
-                    Message = "Error during logging",
-                    Priority = Priorities.High
-                };
-                db.Logs.Add(log);
-                db.SaveChanges();
-            }
+            //using (var db = new LogContext())
+            //{
+            //    var log = new Log
+            //    {
+            //        DateTime = DateTime.Now,
+            //        Message = "Error during logging",
+            //        Priority = Priorities.High
+            //    };
+            //    db.Logs.Add(log);
+            //    db.SaveChanges();
+            //}
 
             using (var db = new UserContext())
             {
