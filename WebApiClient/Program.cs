@@ -11,9 +11,9 @@ namespace WebApiClient
 {
     public class Dl
     {
-        public string DlTitle { get; set; }
         public int DlId { get; set; }
         public string Dpsi { get; set; }
+        public string DlTitle { get; set; }
     }
 
     public class Dls : List<Dl>
