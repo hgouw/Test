@@ -271,7 +271,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64396</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/MVC</IISUrl>
+          <IISUrl>http://localhost:64510/MVC</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
