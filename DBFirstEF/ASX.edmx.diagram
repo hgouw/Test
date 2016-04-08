@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d7acfbce5bf4245a31da30a4a2d5596" Name="Diagram1">
+        <EntityTypeShape EntityType="ASXDBModel.Company" Width="1.5" PointX="2.875" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASXDBModel.EndOfDay" Width="1.5" PointX="5.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASXDBModel.IndustryGroup" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASXDBModel.WatchList" Width="1.5" PointX="5.875" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="ASXDBModel.FK_Company_IndustryGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ASXDBModel.FK_EndOfDay_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="ASXDBModel.FK_WatchList_Company" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
