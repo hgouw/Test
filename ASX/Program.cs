@@ -60,6 +60,7 @@ namespace ASX
 
     public class WatchList
     {
+        [Key]
         public string Code { get; set; }
         public virtual Company Company { get; set; }
     }
