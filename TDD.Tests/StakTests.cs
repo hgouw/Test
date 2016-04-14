@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TDD.Tests
 {
@@ -17,8 +18,9 @@ namespace TDD.Tests
         [TestMethod()]
         public void PopTest()
         {
+            stak.Push(new object());
             var item = stak.Pop();
-            Assert.IsTrue(stak.IsEmpty);
+            Assert.IsTrue(item != null);
         }
 
         [TestMethod()]
