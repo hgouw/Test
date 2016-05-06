@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sort
 {
@@ -15,6 +12,7 @@ namespace Sort
 
         static void Main(string[] args)
         {
+            /*
             SortedList<string, Instrument> instruments = new SortedList<string, Instrument> { };
             Stock stock = new Stock();
             Future future = new Future();
@@ -25,6 +23,18 @@ namespace Sort
             instruments.Add(nameof(option), option);
             foreach (var instrument in instruments)
                 Console.WriteLine(instrument.Value);
+            Console.ReadLine();
+            */
+
+            string[] names = { "Helen", " Herman", "1Sarah", "Olivia" };
+            var nameList = new List<string>();
+            nameList.AddRange(names);
+            nameList.Sort();
+
+            foreach (var name in nameList)
+            {
+                Console.WriteLine(name);
+            }
             Console.ReadLine();
         }
     }
