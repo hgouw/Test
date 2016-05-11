@@ -14,11 +14,11 @@ namespace CSharp6
     {
         // Auto Property Initializers
         public string FirstName { get; set; } = "";
-        public string OldName { get; set; } = "";
+        public string LastName { get; set; } = "";
 
         // Expression-bodied Member
         // String Interpolation
-        public override string ToString() => $"{FirstName} - {OldName}";
+        public override string ToString() => $"FirstName = {FirstName} - LastName = {LastName}";
     }
 
     class Program
@@ -29,7 +29,8 @@ namespace CSharp6
             WriteLine(nameof(User));
             WriteLine(nameof(User.Name));
             WriteLine(nameof(Name.FirstName));
-            WriteLine(nameof(Name.ToString));
+            var name = new Name { FirstName = "Herman", LastName = "Gouw" };
+            WriteLine(name.ToString());
             ReadLine();
 
             Dictionary<string, string> dict1 = new Dictionary<string, string>
@@ -52,7 +53,7 @@ namespace CSharp6
             if (Okay()) {}
 
             // Null Conditional Operator
-            var LastName = user?.Name?.OldName ?? "lastname unknown";
+            var LastName = user?.Name?.LastName ?? "lastname unknown";
         }
     }
 }
