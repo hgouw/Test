@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Sort
 {
@@ -26,12 +27,13 @@ namespace Sort
             Console.ReadLine();
             */
 
-            string[] names = { "Helen", " Herman", "1Sarah", "Olivia" };
+            string[] names = { "Helen", "Herman", "1Sarah", "Olivia" };
             var nameList = new List<string>();
             nameList.AddRange(names);
-            nameList.Sort();
+            //nameList.Sort();
 
-            foreach (var name in nameList)
+            //foreach (var name in nameList)
+            foreach (var name in nameList.OrderBy(n => n))
             {
                 Console.WriteLine(name);
             }
