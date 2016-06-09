@@ -86,7 +86,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config" />
     <EntityDeploy Include="ASX.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ASX.Designer.cs</LastGenOutput>
