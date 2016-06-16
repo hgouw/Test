@@ -11,7 +11,7 @@ namespace Sort
         public class Future : Instrument { };
         public class Option : Instrument { };
 
-        static void Main(string[] args)
+        static void Main()
         {
             /*
             SortedList<string, Instrument> instruments = new SortedList<string, Instrument> { };
@@ -27,13 +27,21 @@ namespace Sort
             Console.ReadLine();
             */
 
-            string[] names = { "Helen", "Herman", "1Sarah", "Olivia" };
-            var nameList = new List<string>();
-            nameList.AddRange(names);
-            //nameList.Sort();
+            //string[] names = { "Helen", "Herman", "1Sarah", "Olivia" };
+            //var nameList = new List<string>();
+            //nameList.AddRange(names);
+            ////nameList.Sort();
 
-            //foreach (var name in nameList)
-            foreach (var name in nameList.OrderBy(n => n))
+            ////foreach (var name in nameList)
+            //foreach (var name in nameList.OrderBy(n => n))
+            //{
+            //    Console.WriteLine(name);
+            //}
+            //Console.ReadLine();
+
+            string[] names = { "john", "paul", "ringo", "george", "janis" };
+            var orderedNames = names.OrderByDescending(x => x, new CustomStringComparer());
+            foreach (var name in orderedNames)
             {
                 Console.WriteLine(name);
             }
