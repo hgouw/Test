@@ -16,6 +16,7 @@ namespace Sort
             {
                 if (char.IsNumber(c2))
                 {
+
                     //-1 (c1 < c2)
                     //0  (c1 = c2)
                     //1  (c1 > c2)
@@ -41,9 +42,21 @@ namespace Sort
         }
     }
 
+    //int CompareChar(char c1, char c2)
+    //{
+    //    int dif;
+    //    dif = char.ToUpper(c1) - char.ToUpper(c2);
+    //    if (diff != 0)
+    //        dif = char.ToLower(c1) - char.ToLower(c2);
+    //    return dif;
+    //}
+
+    //char x = '9'; // '9' = ASCII 57
+    //int b = x - '0'; //That is '9' - '0' = 57 - 48 = 9
+
     class CustomStringComparer : IComparer<string>
     {
-        // Sort as Paul, George, Ringo, John and the rest
+        // Sort as Paul, George, Ringo, John then the rest
         int IComparer<string>.Compare(string s1, string s2)
         {
             char c1 = s1[0];
