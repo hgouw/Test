@@ -39,6 +39,19 @@ namespace Sort
             //}
             //Console.ReadLine();
 
+            string[] titles = {
+                                "2010 Richies uniform procedure rules NSW HV + Cases",
+                                "Richies uniform procedure rules NSW + Cases",
+                                "2010 Richies uniform procedure rules NSW HV + Cases",
+                                "Richies uniform procedure rules NSW",
+                              };
+            var orderedTitles = titles.OrderByDescending(x => x, new TitleComparer());
+            foreach (var title in orderedTitles)
+            {
+                Console.WriteLine(title);
+            }
+            Console.ReadLine();
+
             string[] names = { "john", "paul", "ringo", "george", "janis" };
             var orderedNames = names.OrderByDescending(x => x, new CustomStringComparer());
             foreach (var name in orderedNames)
@@ -48,4 +61,4 @@ namespace Sort
             Console.ReadLine();
         }
     }
-}
+ }
