@@ -39,13 +39,21 @@ namespace Sort
             //}
             //Console.ReadLine();
 
+            //string[] titles = {
+            //                    "1",
+            //                    "0",
+            //                    "z",
+            //                    "a"
+            //                  };
+
             string[] titles = {
                                 "2010 Richies uniform procedure rules NSW HV + Cases",
                                 "Richies uniform procedure rules NSW + Cases",
-                                "2010 Richies uniform procedure rules NSW HV + Cases",
+                                "2010 Richies uniform procedure rules NSW HV",
                                 "Richies uniform procedure rules NSW",
                               };
-            var orderedTitles = titles.OrderByDescending(x => x, new TitleComparer());
+
+            var orderedTitles = titles.OrderBy(x => x, new TitleComparer());
             foreach (var title in orderedTitles)
             {
                 Console.WriteLine(title);
