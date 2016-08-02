@@ -35,8 +35,10 @@ namespace Excel
             excel.Visible = false;
             Workbook workbook = excel.Workbooks.Open(path, Missing.Value, false, Missing.Value, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, Missing.Value);
             workbook.RefreshAll();
-            var range = workbook.Worksheets[1].Range("E11", "W171");
-            range.Cells.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            //var range = workbook.Worksheets["Legal Obligation Register"].Range("E11", "W171");
+            //range.Cells.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            workbook.Worksheets["Legal Obligation Register"].Range("E11", "W171").Cells.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            workbook.Worksheets["Tools"].Range("A6", "F581").Cells.Borders.Color = ColorTranslator.ToOle(Color.Black);
             workbook.Save();
             workbook.Close(true);
             excel.Quit();
