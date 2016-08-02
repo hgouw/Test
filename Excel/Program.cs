@@ -9,7 +9,7 @@ namespace Excel
     {
         static void Main()
         {
-            string path = @"C:\My Documents\My Projects\Test\Excel\App_Data\W.xlsm"; //@"..\..\App_Data\W.xlsm";
+            string path = @"C:\My Documents\My Projects\Test\Excel\App_Data\W.xlsm";
             var excel = (Application)Marshal.GetActiveObject("Excel.Application");
             excel.Visible = false;
             Workbook workbook = excel.Workbooks.Open(path, Missing.Value, false, Missing.Value, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, Missing.Value);
