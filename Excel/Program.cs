@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
 
@@ -29,17 +30,15 @@ namespace Excel
             }
             */
 
-            string txtLocation = @"D:\ComplianceSpreadsheetTool\W - Copy.xlsm";
-
-            object _missingValue = System.Reflection.Missing.Value;
+            string path = @"C:\My Documents\My Projects\Test\Excel\App_Data\W.xlsm"; //@"..\..\App_Data\W.xlsm";
             var excel = (Application)Marshal.GetActiveObject("Excel.Application");
             excel.Visible = false;
-
-            Workbook theWorkbook = excel.Workbooks.Open(txtLocation, _missingValue, false, _missingValue, _missingValue, _missingValue, true, _missingValue, _missingValue, true, _missingValue, _missingValue, _missingValue);
-            theWorkbook.RefreshAll();
-            theWorkbook.Worksheets[1].Range("E11", "W15").BorderAround(XlLineStyle.xlContinuous, XlBorderWeight.xlThin, XlColorIndex.xlColorIndexAutomatic, ColorTranslator.ToOle(Color.Black), Type.Missing);
-            theWorkbook.Save();
-            theWorkbook.Close(true);
+            Workbook workbook = excel.Workbooks.Open(path, Missing.Value, false, Missing.Value, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, true, Missing.Value, Missing.Value, Missing.Value);
+            workbook.RefreshAll();
+            var range = workbook.Worksheets[1].Range("E11", "W171");
+            range.Cells.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            workbook.Save();
+            workbook.Close(true);
             excel.Quit();
         }
     }
