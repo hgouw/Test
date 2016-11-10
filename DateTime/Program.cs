@@ -5,8 +5,10 @@ namespace DateTime
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine(System.DateTime.Now.ToString("yyMMddHHmmss"));
+
             string s = "9 Jun 2014";
             //string s = "18 Sep 2014 10:15:36 AM GMT+10:00";
             //string s = "18 Sep 2014 10:15:36 PM GMT+10:00";
